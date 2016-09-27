@@ -1,0 +1,1 @@
+I'll create a blog using jumpstartlab I0-I6 steps.

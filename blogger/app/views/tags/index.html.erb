@@ -2,6 +2,9 @@
 
 <ul>
 <% @tag.each do |tag| %>
-<li> <%= link_to tag, tag_path(tag)%> <%=link_to "Remove tag", tag_path(tag), method: :delete %></li>
+<li> <%= link_to tag, tag_path(tag)%> 
+  <% if logged_in? %>
+<%=link_to "Remove tag", tag_path(tag), method: :delete %></li>
+<%end%>
 <%end%>
 </ul>
